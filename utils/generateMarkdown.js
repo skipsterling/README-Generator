@@ -67,13 +67,65 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-
+function renderLicenseSection(license) {
+  let licenseSection;
+  switch (license) {
+    case 'Apache 2.0':
+      licenseSection = '## License\n\tThe licensee of this application is Apache 2.0';
+      break;
+      case 'MIT':
+        licenseSection = '## License\n\tThe licensee of this application is MIT';
+        break;
+        case 'Mozilla 2.0':
+          licenseSection = '## License\n\tThe licensee of this application is Mozilla 2.0';
+          break;
+          case 'GNU GPLv3':
+          licenseSection = '## License\n\tThe licensee of this application is GNU GPLv3';
+          break;
+          case 'Boost 1.0':
+            licenseSection = '## License\n\tThe licensee of this application is Boost 1.0';
+            break;
+            case 'The Unlicense':
+            licenseSection = '## License\n\tThe licensee of this application is The Unlicense';
+            break;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${renderLicenseBadge(data.license)}
+${renderLicenseLink(data.license)}
 
+## Description
+${data.Description}
+
+## Table of Contents
+-[Installation](#Install)
+-[Usage](#Usage)
+-[Contribution](#Contribute)
+-[Testing](#Test)
+-[Licensing](#Licensing)
+-[Questions](#Questions)
+
+## Installation
+${data.Install}
+
+##Usage 
+${data.Usage}
+
+${renderLicenseSection(data.license)}
+
+## Contribution 
+${data.Contribute}
+
+## Testing
+${data.Test}
+
+## Questions
+If you have any further questions you can find my details on github (https://github.com/${data.userName})
+or you can contact me directly via email. ${data.email}
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown,}
