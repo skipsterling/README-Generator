@@ -1,9 +1,9 @@
-# undefined
+# Title
 undefined
 undefined
 
 ## Description
-This is where you will add your description.
+Description
 
 ## Table of Contents
 -[Installation](#Install)
@@ -14,19 +14,19 @@ This is where you will add your description.
 -[Questions](#Questions)
 
 ## Installation
-This is where you will add you installation instructions.
+Install Instructions
 
-##Usage 
-This is where your usage section is. 
+## Usage 
+Usage
 
 undefined
 
 ## Contribution 
-Add information on how others can contribute to your project/application here.
+Contribute
 
 ## Testing
-Let others know how they can test your work.
+Test
 
 ## Questions
-If you have any further questions you can find my details on github (https://github.com/add your github name here.)
-or you can contact me directly via email. add your email here.
+If you have any further questions you can find my details on github (https://github.com/skipsterling)
+or you can contact me directly via email. thomassterlingjames@gmail.com
